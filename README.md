@@ -32,10 +32,18 @@ User Story #11: The #quote-box wrapper element should be horizontally centered. 
 ## Framework
 - React
 
+## CI/CD
+- init react project
+    ```
+    npx create-react-app my-app
+    cd my-app
+    npm start
+    ```
 
-
-
-
+- install redux
+    ```
+    npm install redux react-redux
+    ```
 
 
 --------------------------
