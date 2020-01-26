@@ -1,17 +1,6 @@
 import React from 'react';
 import './App.css';
 
-const quotes = [
-  {
-    author: 'Jason',
-    text: 'Hello world'
-  },
-  {
-    author: 'Maggie',
-    text: 'Hey there'
-  }
-]
-
 class QuoteArea extends React.Component {
   constructor(props) {
     super(props);

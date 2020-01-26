@@ -7,6 +7,17 @@ import { createStore } from 'redux';
 
 
 // CONSTANT
+const quotes = [
+    {
+        author: 'Jason',
+        text: 'Hello world'
+    },
+    {
+        author: 'Maggie',
+        text: 'Hey there'
+    }
+]
+
 const RANDOM = 'RANDOM';
 
 // STORE - GLOBALIZED STATE
@@ -38,9 +49,9 @@ let store = createStore(randomR,
 //store.subscribe(() => console.log(store.getState()));
 
 // DISPATCH
-store.dispatch(random(100000));
-store.dispatch(random(10));
 store.dispatch(random(1));
+store.dispatch(random(100));
+store.dispatch(random(1000));
 
 
 
