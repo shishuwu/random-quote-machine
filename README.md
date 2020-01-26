@@ -45,7 +45,13 @@ User Story #11: The #quote-box wrapper element should be horizontally centered. 
     npm install redux react-redux
     ```
 
-
+- debug with chrome redux-sevtools
+    ```
+    const store = createStore(
+    reducer, /* preloadedState, */
+    +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    );
+    ```
 --------------------------
 
 
