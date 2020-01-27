@@ -7,19 +7,6 @@ import allReducers from './reducers';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 
-// CONSTANT
-const quotes = [
-    {
-        author: 'Jason',
-        text: 'Hello world'
-    },
-    {
-        author: 'Maggie',
-        text: 'Hey there'
-    }
-]
-
-
 // STORE - GLOBALIZED STATE
 
 

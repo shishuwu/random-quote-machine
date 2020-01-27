@@ -1,27 +1,19 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { randomA } from './actions/actions';
 import './App.css';
-import { random } from './actions';
+import { quotes } from './constant/constant';
 
-class QuoteArea extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: 'abc',
-      author: 'jason'
-    }
-  }
+function QuoteArea() {
+  const randomR = useSelector(state => state.randomR);
 
-  render() {
-    return (
-      <div id="quote-area">
-        <div id="text">{this.state.text}</div>
-        <div id="author">{this.state.author}</div>
-      </div>
-    );
-  }
+  return (
+    <div id="quote-area">
+      <div id="text">{quotes[randomR].author}</div>
+      <div id="author">{quotes[randomR].text}</div>
+    </div>
+  )
 }
-
 
 function ButtonArea() {
   const dispatch = useDispatch();
@@ -29,32 +21,23 @@ function ButtonArea() {
   return (
     <div id="button-area">
       <button id="tweet-quote">tweet</button>
-      <button id="new-quote" onClick={() => { dispatch(random(100))}}>New quote</button>
+      <button id="new-quote" onClick={() => { dispatch(randomA(quotes.length)) }}>New quote</button>
     </div>
   )
 }
 
-
-
-class QuoteBox extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div id="quote-box">
-        <QuoteArea />
-        <ButtonArea />
-      </div>
-    );
-  }
+function QuoteBox() {
+  return (
+    <div id="quote-box">
+      <QuoteArea />
+      <ButtonArea />
+    </div>
+  )
 }
-
 
 function App() {
   const randomR = useSelector(state => state.randomR);
- 
+
   return (
     <div className="App">
       <h3>Random Quote Machine</h3>

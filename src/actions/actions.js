@@ -1,7 +1,7 @@
 // ACTION
 export const RANDOM = 'RANDOM';
 
-export const random = (scope) => {
+export const randomA = (scope) => {
     return {
         type: RANDOM,
         payload: scope
