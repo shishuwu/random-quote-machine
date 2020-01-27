@@ -1,5 +1,7 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
+import { random } from './actions';
 
 class QuoteArea extends React.Component {
   constructor(props) {
@@ -29,7 +31,7 @@ class ButtonArea extends React.Component {
     return (
       <div id="button-area">
         <button id="tweet-quote">tweet</button>
-        <button id="new-quote">New quote</button>
+        <button id="new-quote" onClick={() => { }}>New quote</button>
       </div>
     );
   }
@@ -54,9 +56,14 @@ class QuoteBox extends React.Component {
 
 
 function App() {
+  const randomR = useSelector(state => state.randomR);
+  const dispatch = useDispatch();
+  
   return (
     <div className="App">
       <h3>Random Quote Machine</h3>
+      <h4>Random number: {randomR} </h4>
+      <button onClick={() => { dispatch(random(100)) }}>click</button>
       <QuoteBox />
     </div>
   );
