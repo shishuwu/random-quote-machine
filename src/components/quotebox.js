@@ -30,9 +30,11 @@ function ButtonArea() {
 
 function QuoteBox() {
     return (
-        <div id="quote-box">
-            <QuoteArea />
-            <ButtonArea />
+        <div id="quote-box" class="card" style={{ width: '18rem;' }}>
+            <div class="card-body">
+                <QuoteArea />
+                <ButtonArea />
+            </div>
         </div>
     )
 }
