@@ -1,4 +1,4 @@
-# freecodecamp
+# freecodecamp - project 1
 [Build a Random Quote Machine](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine)
 
 - [sample](https://codepen.io/freeCodeCamp/full/qRZeGZ)
