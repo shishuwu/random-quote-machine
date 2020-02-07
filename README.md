@@ -2,7 +2,7 @@
 [Build a Random Quote Machine](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine)
 
 - [sample](https://codepen.io/freeCodeCamp/full/qRZeGZ)
-
+    - TODO: how to make it work in codepen
 
 ```
 User Story #1: I can see a wrapper element with a corresponding id="quote-box".
